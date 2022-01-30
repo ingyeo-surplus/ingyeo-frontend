@@ -1,12 +1,18 @@
 <template>
+  <NavBar></NavBar>
+  <div id="app-margin"/>
   <img alt="Vue logo" src="./assets/logo.png">
   <router-view/>
 </template>
 
 <script>
+import NavBar from './components/global/NavBar.vue'
 
 export default {
   name: 'App',
+  components: {
+    NavBar
+  }
 }
 </script>
 
@@ -17,6 +23,8 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+}
+#app-margin {
+  height: 60px;
 }
 </style>
