@@ -1,7 +1,8 @@
 <template>
-  <div id="nav-bar" :class="{ deactivated : hideNavBar }">
+  <div id="nav-bar" :class="{ deactivated: hideNavBar }">
     <img id="menu-sidebar" src="../../assets/menu-burger.svg"/>
-    <img id="menu-logo" src="../../assets/logo.png" :class="{ deactivated : hideNavBar }"/>
+    <img id="menu-logo" src="../../assets/logo.png" :class="{ deactivated: hideNavBar }" @click="$router.push('/')"/>
+    <span id="menu-login" :class="{ deactivated: hideNavBar }" @click="$router.push('/login')">로그인</span>
   </div>
 </template>
 
@@ -57,9 +58,23 @@ export default {
   top: 50%;
   transform: translate(-50%, -50%);
   transition: all ease 200ms;
+  cursor: pointer;
 }
 #menu-logo.deactivated {
   opacity: 0;
   transition: all ease 200ms;
+}
+#menu-login {
+  position: absolute;
+  width: 70px;
+  font-size: 18px;
+  font-weight: bold;
+  right: 30px;
+  text-align: center;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 10px;
+  cursor: pointer;
+  color: var(--ingyeo-dark-green-80);
 }
 </style>
