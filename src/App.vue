@@ -1,8 +1,7 @@
 <template>
-  <NavBar></NavBar>
+  <NavBar/>
   <div id="app-margin"/>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <router-view/>
+  <router-view></router-view>
 </template>
 
 <script>
