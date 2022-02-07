@@ -47,6 +47,7 @@ export default {
   height: 60px;
   width: 100%;
   position: fixed;
+  z-index: 3;
   transition: all ease 200ms;
 }
 #nav-bar.deactivated {
