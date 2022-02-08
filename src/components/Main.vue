@@ -10,7 +10,7 @@
       <div>
         <span style="background: black"/>
       </div>
-  </grid-container>
+    </grid-container>
   </div> 
 </template>
 
@@ -20,11 +20,6 @@ export default {
   name: 'Main',
   components: {
     GridContainer,
-  },
-  methods: {
-    onClick() {
-      console.log("AAA");
-    },
   },
 }
 </script>

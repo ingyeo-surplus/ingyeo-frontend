@@ -1,9 +1,9 @@
 <template>
-<div class="grid-container">
-  <div></div>
-  <slot></slot>
-  <div></div>
-</div>
+  <div class="grid-container">
+    <div></div>
+    <slot></slot>
+    <div></div>
+  </div>
 </template>
 
 <script>
