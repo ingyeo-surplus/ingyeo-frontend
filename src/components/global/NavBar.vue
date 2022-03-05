@@ -1,12 +1,17 @@
 <template>
   <div id="nav-bar" :class="{ deactivated: hideNavBar }">
-    <img id="menu-sidebar" src="../../assets/menu-burger.svg"/>
+    <img id="menu-sidebar" src="../../assets/menu-burger.svg" @click="onMenuClick"/>
     <img id="menu-logo" src="../../assets/logo.png" @click="$router.push('/')"/>
     <span id="menu-user-data" :class="{ deactivated: hideNavBar }" @click="onUserClick">{{ userDataString }}</span>
+  </div>
+  <div id="side-bar">
+    <SideBar :showSideBar="showSideBar"/>
   </div>
 </template>
 
 <script>
+import SideBar from './SideBar.vue';
+
 export default {
   name: 'Header',
   data() {
@@ -14,6 +19,7 @@ export default {
       hideNavBar: false, // nav-bar 숨길지 여부
       isLoggedIn: false, // 로그인 여부
       userDataString: '', // 유저 데이터 위치에 보여줄 내용
+      showSideBar: false
     }
   },
   mounted() {
@@ -35,8 +41,14 @@ export default {
       } else {
         // TODO : user data 있을 시 mypage 혹은 추가 창 띄우기
       }
+    },
+    onMenuClick() {
+      this.showSideBar = !this.showSideBar;
     }
   },
+  components: {
+    SideBar,
+  }
 }
 </script>
 
