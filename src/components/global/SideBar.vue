@@ -23,9 +23,9 @@
       <div id="margin"/>
       <div id="div-line"/>
       <div id="margin"/>
-      <div id="menu-history" class="menu-item" >
-        <img class="menu-item-logo" src="../../assets/menu:history.svg"/>
-        <div class="menu-item-text">역사관</div> 
+      <div id="menu-army" class="menu-item" @click="$router.push('/army/'); menuClickEmit();">
+        <img class="menu-item-logo" src="../../assets/menu:army.svg"/>
+        <div class="menu-item-text">복무 기간</div> 
       </div><div id="menu-chat" class="menu-item" >
         <img class="menu-item-logo" src="../../assets/menu:chat.svg"/>
         <div class="menu-item-text">채팅</div> 
@@ -42,6 +42,11 @@ export default {
   name: 'SideBar',
   props: {
     showSideBar: Boolean,
+  },
+  methods: {
+    menuClickEmit() {
+      this.$emit('menuClick');
+    }
   }
 }
 </script>

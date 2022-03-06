@@ -5,7 +5,7 @@
     <span id="menu-user-data" :class="{ deactivated: hideNavBar }" @click="onUserClick">{{ userDataString }}</span>
   </div>
   <div id="side-bar">
-    <SideBar :showSideBar="showSideBar"/>
+    <SideBar :showSideBar="showSideBar" @menuClick="onMenuClick"/>
   </div>
 </template>
 
@@ -44,7 +44,7 @@ export default {
     },
     onMenuClick() {
       this.showSideBar = !this.showSideBar;
-    }
+    },
   },
   components: {
     SideBar,
@@ -73,6 +73,11 @@ export default {
   left: 20px;
   top:50%;
   transform: translateY(-50%);
+  cursor: pointer;
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  -ms-user-select:none;
+  user-select:none;
 }
 #menu-logo {
   position: absolute;
@@ -85,6 +90,10 @@ export default {
   transform: translate(-50%, -50%);
   transition: all ease 200ms;
   cursor: pointer;
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  -ms-user-select:none;
+  user-select:none;
 }
 #menu-user-data {
   position: absolute;
@@ -98,5 +107,9 @@ export default {
   padding: 10px;
   cursor: pointer;
   color: var(--ingyeo-dark-green-80);
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  -ms-user-select:none;
+  user-select:none;
 }
 </style>
