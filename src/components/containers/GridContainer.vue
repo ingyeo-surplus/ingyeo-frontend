@@ -12,7 +12,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style>
 .grid-container {
   display: grid;
   grid-template-columns: 1fr 1080px 1fr;

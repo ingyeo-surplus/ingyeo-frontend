@@ -101,7 +101,7 @@ export default {
   -webkit-user-select:none;
   -moz-user-select:none;
   -ms-user-select:none;
-  user-select:none
+  user-select:none;
 }
 .menu-item-logo {
   position: absolute;
