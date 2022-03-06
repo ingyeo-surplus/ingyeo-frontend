@@ -12,6 +12,7 @@
     "vue": "^3.0.0",
     "vue-chart-3": "^3.1.2",
     "vue-router": "^4.0.12",
+    "vue-toast-notification": "^3.0.0",
     "vuex": "^4.0.2"
   },
   "devDependencies": {

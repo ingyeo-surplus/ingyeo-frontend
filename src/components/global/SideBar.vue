@@ -4,19 +4,19 @@
       <img id="menu-logo" src="../../assets/logo.png" @click="$router.push('/')"/>
       <div id="div-line"/>
       <div id="margin"/>
-      <div id="menu-board" class="menu-item" >
+      <div id="menu-board" class="menu-item" @click="menuClickNotCreated()">
         <img class="menu-item-logo" src="../../assets/menu:board.svg"/>
         <div class="menu-item-text">게시판</div> 
       </div>
-      <div id="menu-wiki" class="menu-item" >
+      <div id="menu-wiki" class="menu-item" @click="menuClickNotCreated()">
         <img class="menu-item-logo" src="../../assets/menu:wiki.svg"/>
         <div class="menu-item-text">위키</div> 
       </div>
-      <div id="menu-abyss" class="menu-item" >
+      <div id="menu-abyss" class="menu-item" @click="menuClickNotCreated()">
         <img class="menu-item-logo" src="../../assets/menu:abyss.svg"/>
         <div class="menu-item-text">칼바람 나락</div> 
       </div>
-      <div id="menu-album" class="menu-item" >
+      <div id="menu-album" class="menu-item" @click="menuClickNotCreated()">
         <img class="menu-item-logo" src="../../assets/menu:album.svg"/>
         <div class="menu-item-text">앨범</div> 
       </div>
@@ -26,7 +26,7 @@
       <div id="menu-army" class="menu-item" @click="$router.push('/army/'); menuClickEmit();">
         <img class="menu-item-logo" src="../../assets/menu:army.svg"/>
         <div class="menu-item-text">복무 기간</div> 
-      </div><div id="menu-chat" class="menu-item" >
+      </div><div id="menu-chat" class="menu-item" @click="menuClickNotCreated()">
         <img class="menu-item-logo" src="../../assets/menu:chat.svg"/>
         <div class="menu-item-text">채팅</div> 
       </div>
@@ -46,6 +46,10 @@ export default {
   methods: {
     menuClickEmit() {
       this.$emit('menuClick');
+    },
+    menuClickNotCreated() {
+      this.$toast.error('Not Yet Implemented!');
+      this.menuClickEmit();
     }
   }
 }
