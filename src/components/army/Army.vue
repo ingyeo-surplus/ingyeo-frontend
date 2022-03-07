@@ -2,11 +2,7 @@
   <div>
     <grid-container>
       <div id="title">복무 기간</div>
-    </grid-container>
-    <grid-container>
       <div id="div-line"/>
-    </grid-container>
-    <grid-container>
       <ArmyTimeLeft id="army-graph"/>
     </grid-container>
   </div>

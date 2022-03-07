@@ -1,7 +1,9 @@
 <template>
   <div class="grid-container">
     <div></div>
-    <slot></slot>
+    <div>
+      <slot></slot>
+    </div>
     <div></div>
   </div>
 </template>
