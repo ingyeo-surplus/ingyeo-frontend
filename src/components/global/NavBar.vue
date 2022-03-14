@@ -19,7 +19,7 @@ export default {
       hideNavBar: false, // nav-bar 숨길지 여부
       isLoggedIn: false, // 로그인 여부
       userDataString: '', // 유저 데이터 위치에 보여줄 내용
-      showSideBar: false
+      showSideBar: false, // 사이드바 보일지 여부 
     }
   },
   mounted() {

@@ -5,29 +5,29 @@
       <div id="div-line"/>
       <div id="margin"/>
       <div id="menu-board" class="menu-item" @click="menuClickNotCreated()">
-        <img class="menu-item-logo" src="../../assets/menu:board.svg"/>
+        <img class="menu-item-logo" src="../../assets/menu_board.svg"/>
         <div class="menu-item-text">게시판</div> 
       </div>
       <div id="menu-wiki" class="menu-item" @click="menuClickNotCreated()">
-        <img class="menu-item-logo" src="../../assets/menu:wiki.svg"/>
+        <img class="menu-item-logo" src="../../assets/menu_wiki.svg"/>
         <div class="menu-item-text">위키</div> 
       </div>
       <div id="menu-abyss" class="menu-item" @click="menuClickNotCreated()">
-        <img class="menu-item-logo" src="../../assets/menu:abyss.svg"/>
+        <img class="menu-item-logo" src="../../assets/menu_abyss.svg"/>
         <div class="menu-item-text">칼바람 나락</div> 
       </div>
       <div id="menu-album" class="menu-item" @click="menuClickNotCreated()">
-        <img class="menu-item-logo" src="../../assets/menu:album.svg"/>
+        <img class="menu-item-logo" src="../../assets/menu_album.svg"/>
         <div class="menu-item-text">앨범</div> 
       </div>
       <div id="margin"/>
       <div id="div-line"/>
       <div id="margin"/>
       <div id="menu-army" class="menu-item" @click="$router.push('/army/'); menuClickEmit();">
-        <img class="menu-item-logo" src="../../assets/menu:army.svg"/>
+        <img class="menu-item-logo" src="../../assets/menu_army.svg"/>
         <div class="menu-item-text">복무 기간</div> 
       </div><div id="menu-chat" class="menu-item" @click="menuClickNotCreated()">
-        <img class="menu-item-logo" src="../../assets/menu:chat.svg"/>
+        <img class="menu-item-logo" src="../../assets/menu_chat.svg"/>
         <div class="menu-item-text">채팅</div> 
       </div>
       <div id="margin"/>
