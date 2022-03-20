@@ -32,6 +32,9 @@ export default {
   --ingyeo-medium-green-60: #99BA68;
   --ingyeo-medium-green-40: #BBD19A;
   --ingyeo-medium-green-20: #DDE8CD;
+
+
+  --ingyeo-light-green-20: #E6F2CD;
 }
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
@@ -43,4 +46,5 @@ export default {
 #app-margin {
   height: 60px;
 }
+a:hover{ text-decoration:underline; color: var(--ingyeo-dark-green-100) }
 </style>

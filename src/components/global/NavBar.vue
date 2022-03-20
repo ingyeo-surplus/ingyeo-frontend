@@ -37,7 +37,7 @@ export default {
     },
     onUserClick() {
       if ( !this.isLoggedIn ) {
-        this.$router.push('/login');
+        this.$router.push('/login/');
       } else {
         // TODO : user data 있을 시 mypage 혹은 추가 창 띄우기
       }
